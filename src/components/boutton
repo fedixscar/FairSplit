@@ -1,0 +1,40 @@
+      {/* ── FAB ── */}
+      <button className="fab-add-expense">
+        <span className="fab-add-expense__icon">＋</span>
+        Add Expense
+      </button>
+
+
+      /* ============================================================
+   CSS DE "ADD EXPENSE" 
+   ============================================================ */
+.fab-add-expense {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 22px;
+  background: var(--accent);
+  color: var(--dark);
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 0.88rem;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 0 6px 24px rgba(45, 212, 191, 0.4);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  z-index: 50;
+}
+.fab-add-expense:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(45, 212, 191, 0.5);
+}
+.fab-add-expense__icon {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
