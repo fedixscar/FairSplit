@@ -36,14 +36,38 @@
 // }
 
 // export default App;
+// import React from "react";
+// import Settings from "./pages/Settings";
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <Settings />
+//     </div>
+//   );
+// }
+// export default App;
+
+// import React from "react";
+// import Expenses from "./pages/Expenses";
+// function App() {
+//   return (
+//     <div className="App">
+//       <Expenses />
+//     </div>
+//   );
+// }
+
+// export default App;
 import React from "react";
-import Settings from "./pages/Settings";
+import History from "./pages/History";
 
 function App() {
   return (
     <div className="App">
-      <Settings />
+      <History />
     </div>
   );
 }
+
 export default App;
