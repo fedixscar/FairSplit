@@ -33,12 +33,12 @@ const CAT_META = {
 const SEED_TRANSACTIONS = [
   {
     id: 1,
-    date: "2026-02-23",
+    date: "2026-03-23",
     time: "18:45",
     title: "Groceries",
     category: "food",
     paidBy: "Sara",
-    amount: +150,
+    amount: -150,
     status: "settled",
   },
   {
@@ -276,7 +276,7 @@ const ChevronRightIcon = () => (
     <polyline points="9 18 15 12 9 6" />
   </svg>
 );
-
+//peut être lezm tetfasakh hedhi
 const PlusIcon = () => (
   <svg
     width="15"
@@ -618,11 +618,6 @@ const History = () => {
           </div>
         </div>
       </div>
-
-      {/* FAB */}
-      <button className="fab-history">
-        <PlusIcon /> Add Expense
-      </button>
     </div>
   );
 };
