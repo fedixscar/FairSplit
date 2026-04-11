@@ -118,18 +118,20 @@ L'application sera accessible sur **http://localhost:5173**.
 ---
 
 ## Structure du projet
+```
 FairSplit/
-├── client/                 # Frontend React
+├── client/               # Frontend React
 │   └── src/
-│       ├── api/            # Logique d'appels API
-│       ├── context/        # État global (Auth, Toasts…)
-│       ├── components/     # Composants réutilisables
-│       └── pages/          # Vues / routes
-└── serv/                   # Backend Node.js
-├── models/             # Schémas MongoDB (Mongoose)
-├── routes/             # Définition des routes API
-├── controllers/        # Logique métier
-└── middleware/         # Auth, gestion d'erreurs
+│       ├── api/          # Appels API
+│       ├── context/      # Etat global (Auth, Toasts...)
+│       ├── components/   # Composants reutilisables
+│       └── pages/        # Vues / routes
+└── serv/                 # Backend Node.js
+    ├── models/           # Schemas MongoDB
+    ├── routes/           # Routes API
+    ├── controllers/      # Logique metier
+    └── middleware/       # Auth, erreurs
+```
 
 ---
 
