@@ -1,90 +1,82 @@
 # FairSplit
 
-FairSplit est une application web moderne pour gerer les depenses entre amis, en famille ou en colocation. Elle permet de suivre qui doit quoi a qui, de gerer des groupes et des demandes d'achats en temps reel.
+<p align="center">
+  Application web moderne pour la gestion des dépenses partagées
+</p>
 
-## Prerequis
+<p align="center">
+  <img src="https://img.shields.io/badge/status-active-success" />
+  <img src="https://img.shields.io/badge/stack-MERN-blue" />
+  <img src="https://img.shields.io/badge/license-MIT-lightgrey" />
+  <img src="https://img.shields.io/badge/version-1.0.0-orange" />
+</p>
 
-Avant de commencer, assurez-vous d'avoir installe les elements suivants sur votre machine :
+---
 
-- Node.js (version 18 ou superieure recommandee)
-- npm (generalement installe avec Node.js)
-- MongoDB (une instance locale ou un compte MongoDB Atlas)
+## Présentation
 
-## Installation et Demarrage
+FairSplit est une application web permettant de gérer efficacement les dépenses entre plusieurs utilisateurs.  
+Elle facilite le suivi des dettes, la gestion des groupes et la répartition des paiements avec une mise à jour en temps réel.
 
-Le projet est divise en deux parties : le Client (Frontend) et le Serveur (Backend).
+---
 
-### 1. Configuration du Serveur (Backend)
+## Aperçu de l’application
 
-Allez dans le dossier `serv` :
+<!-- Remplace ces images par tes propres captures -->
+![Aperçu](./screenshots/dashboard.png)
+
+---
+
+## Fonctionnalités
+
+- Gestion des groupes
+- Ajout et suivi des dépenses
+- Calcul automatique des soldes
+- Notifications en temps réel
+- Authentification sécurisée
+- Réinitialisation du mot de passe par email
+- Export des données en PDF
+- Onboarding utilisateur interactif
+
+---
+
+## Stack technique
+
+### Frontend
+- React 19
+- Vite
+- React Router DOM
+- Framer Motion
+- Socket.io-client
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB avec Mongoose
+- Socket.io
+- JSON Web Token (JWT)
+- bcrypt
+
+### Outils
+- Nodemon
+- ESLint
+
+---
+
+## Architecture
 
 ```bash
-cd serv
-```
-
-Installez les dependances :
-
-```bash
-npm install
-```
-
-Configurez les variables d'environnement :
-Creez un fichier `.env` dans le dossier `serv` en vous basant sur `.env.example` :
-
-```env
-PORT=5000
-MONGO_URI=votre_url_mongodb
-JWT_SECRET=votre_secret_jwt
-JWT_EXPIRE=7d
-NODE_ENV=development
-FRONTEND_URL=http://localhost:3000
-RESEND_API_KEY=votre_cle_api_resend
-RESEND_FROM_EMAIL=votre_email_expediteur
-```
-
-Demarrez le serveur (en mode developpement) :
-
-```bash
-npm run dev
-```
-
-### 2. Configuration du Client (Frontend)
-
-Allez dans le dossier `client` :
-
-```bash
-cd client
-```
-
-Installez les dependances :
-
-```bash
-npm install
-```
-
-Demarrez l'application :
-
-```bash
-npm run dev
-```
-
-L'application sera accessible sur http://localhost:3000.
-
-## Technologies utilisees
-
-- Frontend : React 19, Vite, Framer Motion (animations), Custom CSS (avec variables CSS).
-- Backend : Node.js, Express, MongoDB (Mongoose), Socket.io (temps reel).
-- Authentification : JSON Web Token (JWT).
-- Emailing : Resend.
-
-## Structure du projet
-
-- client/ : Contient tout le code frontend (React).
-- serv/ : Contient tout le code backend (Node.js/Express).
-- client/src/api/ : Logique de communication avec l'API.
-- client/src/context/ : Gestion des etats globaux (Auth, Toasts, etc.).
-- serv/models/ : Schemas de donnees MongoDB.
-
-## Licence
-
-(c) 2026 FairSplit Inc. Tous droits reserves.
+FairSplit/
+│
+├── client/
+│   ├── src/
+│   │   ├── api/
+│   │   ├── context/
+│   │   ├── components/
+│   │   └── pages/
+│
+├── serv/
+│   ├── models/
+│   ├── routes/
+│   ├── controllers/
+│   └── middleware/
