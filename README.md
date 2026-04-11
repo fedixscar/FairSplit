@@ -18,6 +18,21 @@
 
 **FairSplit** est une application web full-stack permettant de gerer les depenses partagees au sein d'un groupe. Elle offre un suivi en temps reel des dettes, une repartition automatique des soldes, et une experience utilisateur fluide grace a des animations soignees et un systeme d'onboarding interactif.
 
+> **Note** : FairSplit est optimise pour les ordinateurs de bureau. La version mobile est en cours de developpement.
+
+---
+
+## Apercu
+
+### Landing Page
+![Landing Page](./screenshots/landing.png)
+
+### Dashboard
+![Dashboard](./screenshots/dashboard.png)
+
+### Bloc version mobile
+![Mobile block](./screenshots/mobile.png)
+
 ---
 
 ## Fonctionnalites
@@ -96,7 +111,7 @@ Avant de commencer, assurez-vous d'avoir installe :
 
 - **Node.js** v18 ou superieure
 - **npm** (inclus avec Node.js)
-- **MongoDB** — instance locale ou cluster [MongoDB Atlas](https://www.mongodb.com/atlas)
+- **MongoDB** - instance locale ou cluster [MongoDB Atlas](https://www.mongodb.com/atlas)
 
 ---
 
@@ -151,6 +166,10 @@ L'application sera accessible sur **http://localhost:5173**.
 
 ```
 FairSplit/
+├── screenshots/          # Captures d'ecran
+│   ├── landing.png
+│   ├── dashboard.png
+│   └── mobile.png
 ├── client/               # Frontend React
 │   └── src/
 │       ├── api/          # Appels API
