@@ -47,7 +47,7 @@ const expenseSchema = new mongoose.Schema(
       ref: "RecurringExpense",
       default: null,
     },
-    // ✅ ID de ticket sequentiel (format FSTXXXXXX)
+    // ✅ ID de ticket sequentiel 
     ticket_id: {
       type: String,
       unique: true,
