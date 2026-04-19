@@ -22,9 +22,9 @@ import {
 } from "@heroicons/react/24/outline";
 import "./History.css";
 
-/* ============================================================
+/*
    CUSTOM CURSOR HOOK
-   ============================================================ */
+ */
 const useCursor = () => {
   const dotRef  = useRef(null);
   const ringRef = useRef(null);

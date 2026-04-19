@@ -7,7 +7,7 @@
   position: relative;
 }
 
-/* ambient orbs */
+
 .settings-page::before,
 .settings-page::after {
   content: "";

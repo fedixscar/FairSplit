@@ -1,9 +1,9 @@
-/* ============================================================
+/* 
    Auth.css — FairSplit · Login Page
    Same design system as LandingPage.css
-   ============================================================ */
+ */
 
-/* ── Tokens (mirrors global) ── */
+/* ── Tokens  ── */
 :root {
   --auth-dark:    var(--bg);
   --auth-mid:     var(--surface-soft);

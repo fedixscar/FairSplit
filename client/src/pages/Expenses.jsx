@@ -30,9 +30,9 @@ import {
 } from "@heroicons/react/24/outline";
 import "./Expenses.css";
 
-/* ============================================================
+/* 
    CONSTANTS
-   ============================================================ */
+*/
 const CATEGORIES = [
   { value: "food",          label: "Courses",       icon: ShoppingBagIcon },
   { value: "bills",         label: "Factures",      icon: DocumentTextIcon },

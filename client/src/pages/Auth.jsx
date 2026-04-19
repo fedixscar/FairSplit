@@ -86,7 +86,7 @@ const Auth = () => {
             </div>
           </div>
 
-          {/* Floating mock card */}
+          {/* Floating mock cards */}
           <div className="auth-mock-card">
             <div className="auth-mock-card__header">
               <div className="auth-mock-card__title">Appartement Tunis</div>

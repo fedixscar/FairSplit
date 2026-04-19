@@ -18,8 +18,7 @@ const ScrollIntro = ({ onComplete }) => {
     restDelta: 0.001
   });
 
-  // Zoom and Y move effect
-  // We start the zoom a bit earlier (0.7) and finish near the end
+
   const scale = useTransform(smoothProgress, [0.7, 0.95], [1, 6]); 
   const yMove = useTransform(smoothProgress, [0.7, 0.95], [0, -100]);
   const opacity = useTransform(smoothProgress, [0.92, 1], [1, 0]);

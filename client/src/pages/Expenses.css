@@ -20,7 +20,7 @@
   flex-direction: column;
 }
 
-/* ambient orbs */
+
 .expenses-page::before,
 .expenses-page::after {
   content: "";
@@ -64,9 +64,9 @@
   overflow-y: auto;
 }
 
-/* ─────────────────────────────────────────────────────────────
+/* 
    TOP ROW
-───────────────────────────────────────────────────────────── */
+ */
 .expenses-toprow {
   display: flex;
   align-items: center;
